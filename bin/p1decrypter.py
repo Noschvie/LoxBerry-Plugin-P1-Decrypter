@@ -63,8 +63,8 @@ class P1decrypter:
 
         parser.add_argument('-iport', '--serial-input-port', required=False, default="/dev/ttyUSB0",
                             help="Serial input port. Default: /dev/ttyUSB0")
-        parser.add_argument('-ibaudrate', '--serial-input-baudrate', required=False, type=int, default=2400,
-                            help="Serial input baudrate. Default: 2400")
+        parser.add_argument('-ibaudrate', '--serial-input-baudrate', required=True, type=int,
+                            help="Serial input baudrate")
         parser.add_argument('-iparity', '--serial-input-parity', required=False, default=serial.PARITY_NONE,
                             help="Serial input parity. Default: None")
         parser.add_argument('-istopbits', '--serial-input-stopbits', required=False, type=int,
